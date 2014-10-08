@@ -1,0 +1,1 @@
+Collection of Coderbyte exercises with additional notes for studying.
