@@ -1,1 +1,6 @@
-Collection of Coderbyte exercises with additional notes for studying.
+Collection of programming exercises intended for daily practice, along with additional notes for review.
+
+This repo currently contains exercises from:
+
+ - [Coderbyte](http://coderbyte.com/CodingArea/)
+ - [Codewars](http://www.codewars.com/dashboard)
