@@ -1,9 +1,24 @@
 function myParseInt(str) {
+  var numbers = {
+    1: true,
+    2: true,
+    3: true,
+    4: true,
+    5: true,
+    6: true,
+    7: true,
+    8: true,
+    9: true,
+    0: true
+  };
   var trimmedString = str.trim();
-  if (trimmedString.split(' ').length > 1) return NaN;
-  if (trimmedString.split('.').length > 1) return NaN;
+  var containsNonNumber = false;
 
-  return Number(trimmedString);
+  for (var i=0; i < trimmedString.length; i++) {
+    if (!numbers[trimmedString[i]]) containsNonNumber = true;
+  }
+
+  return containsNonNumber ? NaN : Number(trimmedString);
 }
 
 // Test.assertEquals(myParseInt("1"), 1);
